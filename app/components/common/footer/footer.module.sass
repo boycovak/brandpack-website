@@ -1,0 +1,65 @@
+.footer
+    margin: 170px 0 140px 0
+    width: 100%
+    display: grid
+    justify-content: center
+    .container
+        width: 1440px
+        display: block
+        .top
+            display: grid
+            grid-template-columns: auto auto
+            .leftSide
+                display: grid
+                grid-gap: 14px
+                .logo
+                p
+                    font-size: 26px
+                    width: 530px
+                    color: rgba(var(--dark-rgb), .6)
+                .email
+                    display: grid
+                    grid-template-columns: auto 1fr
+                    font-size: 21px
+                    align-items: center
+                    grid-gap: 8px
+                    .emoji
+                        font-size: 32px
+            .rightSide
+                width: 100%
+                .nav
+                    display: grid
+                    grid-template-columns: auto auto auto
+                    grid-gap: 130px
+                    ul
+                        list-style: none
+                        display: grid
+                        align-content: start
+                        justify-content: end
+                        grid-gap: 10px
+                        li
+                            font-size: 24px
+                            font-weight: 500
+                            color: rgba(var(--dark-rgb), 1)
+                            a
+                                color: rgba(var(--dark-rgb), .75)
+                                text-decoration: none
+                                font-weight: 400
+                            .more
+                                color: rgba(var(--dark-rgb), .4)
+                                border-bottom: 1px solid rgba(var(--dark-rgb), .4)
+        .bottom
+            margin-top: 150px
+            display: grid
+            grid-template-columns: 1fr auto
+            font-weight: 300
+            color: rgba(var(--dark-rgb), .6)
+            font-size: 18px
+            span
+                p
+                    display: inline-block
+            a
+                color: rgba(var(--dark-rgb), .6)
+                text-decoration: none
+                &:hover
+                    text-decoration: underline

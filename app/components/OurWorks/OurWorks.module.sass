@@ -1,0 +1,94 @@
+.ourWorks
+    width: 100%
+    display: grid
+    justify-content: center
+    padding: 200px 0
+    .container
+        width: 1440px
+        display: grid
+        justify-items: left
+        .info
+            margin: 0 0 90px 0
+            display: grid
+            grid-gap: 30px
+            h2
+                font-family: 'Sora', sans-serif
+                font-weight: 400
+                font-size: 64px
+                line-height: 110%
+                margin: 0
+                padding: 0
+            p
+                font-size: 32px
+                line-height: 130%
+                color: rgba(var(--dark-rgb), 1)
+                opacity: .7
+                width: 700px
+        .works
+            display: grid
+            grid-column: 1fr
+            grid-row: auto
+            grid-gap: 25vh
+            width: 100%
+            .first
+                display: grid
+                grid-template-columns: 3fr 2fr
+                grid-gap: 7vw
+            .second
+                display: grid
+                grid-template-columns: 1fr
+                width: 80%
+            .third
+                display: grid
+                grid-template-columns: 4fr 6fr
+                grid-gap: 7vw
+                .work:nth-of-type(1)
+                    order: 2
+            .fourth
+                display: grid
+                grid-template-columns: 1fr
+                width: 100%
+                justify-items: end
+                align-items: end
+                .work:nth-of-type(1)
+                    order: 1
+                    width: 80%
+            .fifth
+                display: grid
+                grid-template-columns: 3fr 4fr
+                grid-gap: 7vw
+                .work:nth-of-type(1)
+                    order: 2
+            .sixth
+                display: grid
+                grid-template-columns: 1fr
+                width: 100%
+
+.work
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto 1fr
+    grid-gap: 20px
+    width: 100%
+    cursor: pointer
+    text-decoration: none
+    .img
+        width: 100%
+        display: grid
+        grid-template-columns: 1fr
+        img
+            width: 100%
+            height: auto
+    p
+        font-size: 37px
+        line-height: 125%
+        color: rgba(var(--dark-rgb), .8)
+        b
+            font-weight: 500
+            //border-bottom: 2px solid rgba(var(--dark-rgb), .3)
+            //padding-bottom: -10px !important
+            display: inline-block
+            text-decoration: underline
+            color: rgba(var(--dark-rgb), 1)
+    &:hover
+        cursor: pointer

@@ -1,0 +1,75 @@
+.header
+    width: 100%
+    display: grid
+    justify-content: center
+    position: sticky
+    top: 0
+    background: #fff
+    z-index: 2
+.container
+    width: 1440px
+    display: block
+    .content
+        padding: 40px 0
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr 2fr 1fr
+        .nav
+            width: 100%
+            display: grid
+            justify-content: center
+            ul
+                list-style: none
+                width: auto
+                display: grid
+                grid-template-columns: auto auto auto
+                grid-gap: 40px
+                margin: 0
+                padding: 0
+                li
+                    display: inline
+                    a
+                        color: black
+                        opacity: .7
+                        text-decoration: none
+                        font-size: 24px
+                        font-family: var(--font-inter)
+                        cursor: pointer
+                        -webkit-transition: all .2s ease-out
+                        -moz-transition: all .2s ease-out
+                        -o-transition: all .2s ease-out
+                        transition: all .2s ease-out
+                        &:hover
+                            color: #5B43BD
+                            cursor: pointer
+                            opacity: 1
+                            -webkit-transition: all .2s ease-out
+                            -moz-transition: all .2s ease-out
+                            -o-transition: all .2s ease-out
+                            transition: all .2s ease-out
+        .btnSpace
+            display: grid
+            grid-template-columns: 1fr auto
+            .button
+                background: #242424
+                border: 2px solid #242424
+                color: #fff
+                text-decoration: none
+                padding: 18px 32px
+                border-radius: 99px
+                font-size: 22px
+                cursor: pointer
+                -webkit-transition: all .2s ease-out
+                -moz-transition: all .2s ease-out
+                -o-transition: all .2s ease-out
+                transition: all .2s ease-out
+                word-wrap: break-word
+                &:hover
+                    background: #fff
+                    border: 2px solid #242424
+                    color: #242424
+                    cursor: pointer
+                    -webkit-transition: all .2s ease-out
+                    -moz-transition: all .2s ease-out
+                    -o-transition: all .2s ease-out
+                    transition: all .2s ease-out
