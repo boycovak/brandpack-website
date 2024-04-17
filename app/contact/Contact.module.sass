@@ -1,0 +1,276 @@
+.contact
+    width: 100%
+    display: grid
+    justify-items: center
+.container
+    width: 1440px
+    display: grid
+    margin: 10vh 0
+    grid-gap: 100px
+    h1
+        font-family: 'Sora'
+        font-weight: 400
+        font-size: 120px
+        width: 80%
+    .variants
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 50px
+        .block
+            display: grid
+            grid-gap: 30px
+            padding: 50px 50px 40px 50px
+            border-radius: 24px
+            justify-items: start
+            h2
+                font-family: 'Sora'
+                font-weight: 300
+                font-size: 32px
+                line-height: 100%
+                color: #353539
+            p
+                font-size: 22px
+                line-height: 135%
+                color: rgba(var(--dark-rgb), .6)
+            .footer
+                display: grid
+                grid-template-columns: auto 1fr auto
+                align-items: center
+                width: 100%
+                justify-content: center
+                .email
+                    font-size: 27px
+                    border-bottom: 2px solid rgba(var(--dark-rgb), .35)
+                    line-height: 24px
+                    color: rgba(var(--dark-rgb), 1)
+                    text-decoration: none
+                    &:hover
+                        border-bottom: 2px solid rgba(var(--dark-rgb), .2)
+                .btnCopy
+                    background: #e3e6f1
+                    color: rgba(var(--dark-rgb), .5)
+                    padding: 10px 12px 10px 12px
+                    border-radius: 12px
+                    font-size: 18px
+                    cursor: pointer
+                    -webkit-transition: all .2s ease-out
+                    -moz-transition: all .2s ease-out
+                    -o-transition: all .2s ease-out
+                    transition: all .2s ease-out
+                    &:hover
+                        background: #c8cdde
+                        color: rgba(var(--white-rgb), 1)
+                        -webkit-transition: all .2s ease-out
+                        -moz-transition: all .2s ease-out
+                        -o-transition: all .2s ease-out
+                        transition: all .2s ease-out
+                    &:active
+                        background: #a3abc5
+                        outline: 2px solid #838ca9
+                        color: rgba(var(--white-rgb), .85)
+                        -webkit-transition: all .2s ease-out
+                        -moz-transition: all .2s ease-out
+                        -o-transition: all .2s ease-out
+                        transition: all .2s ease-out
+            .button
+                font-size: 22px
+                text-decoration: none
+                padding: 18px 32px
+                border-radius: 99px
+                width: auto
+                font-weight: 400
+                text-align: center
+                display: grid
+                align-content: center
+            .brief
+                background: #18282D
+                color: rgba(var(--white-rgb), 1)
+                display: grid
+                grid-template-columns: auto auto
+                grid-gap: 14px
+                align-items: center
+                -webkit-transition: all .2s ease-out
+                -moz-transition: all .2s ease-out
+                -o-transition: all .2s ease-out
+                transition: all .2s ease-out
+                &:hover
+                    background: rgba(var(--dark-rgb), 1)
+                    -webkit-transition: all .2s ease-out
+                    -moz-transition: all .2s ease-out
+                    -o-transition: all .2s ease-out
+                    transition: all .2s ease-out
+            .upwork
+                background: none
+                color: rgba(var(--green-rgb), 1)
+                border: 2px solid rgba(var(--green-rgb), 1)
+                -webkit-transition: all .2s ease-out
+                -moz-transition: all .2s ease-out
+                -o-transition: all .2s ease-out
+                transition: all .2s ease-out
+                &:hover
+                    color: rgba(var(--white-rgb), 1)
+                    background: rgba(var(--green-rgb), 1)
+                    -webkit-transition: all .2s ease-out
+                    -moz-transition: all .2s ease-out
+                    -o-transition: all .2s ease-out
+                    transition: all .2s ease-out
+        .sendEmail
+            background-color: #F8F9FD
+            grid-gap: 20px
+            h2
+                font-size: 40px
+        .brief
+            background-color: #E4F3F8
+        .upwork
+            background-color: rgba(var(--green-rgb), .03)
+            border: 2px solid rgba(var(--green-rgb), .1)
+
+@media (max-width: 1500px)
+    .contact
+        .container
+            width: 93vw
+            margin: 8vh 0
+            grid-gap: 90px
+            h1
+                font-size: 110px
+                width: 75%
+            .variants
+                grid-gap: 44px
+                .block
+                    grid-gap: 30px
+                    padding: 48px 48px 38px 48px
+                    border-radius: 22px
+                    h2
+                        font-size: 30px
+                    p
+                        font-size: 21px
+                    .button
+                        font-size: 21px
+                    .footer
+                        .email
+                            font-size: 24px
+
+@media (max-width: 1360px)
+    .contact
+        .container
+            margin: 8vh 0
+            grid-gap: 80px
+            h1
+                font-size: 100px
+                width: 75%
+            .variants
+                grid-gap: 36px
+                .block
+                    grid-gap: 30px
+                    padding: 44px 44px 36px 44px
+                    border-radius: 30px
+                    grid-auto-rows: auto 1fr auto
+                    h2
+                        font-size: 26px
+                        line-height: 120%
+                    p
+                        font-size: 20px
+                    .button
+                        font-size: 20px
+                    .footer
+                        .email
+                            font-size: 22px
+                        .btnCopy
+                            font-size: 16px
+
+@media (max-width: 1260px)
+    .contact
+        .container
+            margin: 8vh 0
+            grid-gap: 80px
+            h1
+                font-size: 90px
+                width: 75%
+            .variants
+                grid-gap: 30px
+                .block
+                    grid-gap: 24px
+                    padding: 40px 40px 36px 40px
+                    border-radius: 30px
+                    h2
+                        font-size: 26px
+                        line-height: 120%
+                    p
+                        font-size: 19px
+                    .button
+                        font-size: 19px
+                    .footer
+                        .email
+                            font-size: 21px
+                        .btnCopy
+                            font-size: 15px
+
+@media (max-width: 1160px)
+    .contact
+        .container
+            margin: 6vh 0
+            grid-gap: 70px
+            h1
+                font-size: 90px
+                width: 75%
+            .variants
+                grid-gap: 30px
+                .block
+                    grid-gap: 24px
+                    padding: 40px 40px 36px 40px
+                    border-radius: 30px
+                    h2
+                        font-size: 24px
+                    p
+                        font-size: 19px
+                    .button
+                        font-size: 19px
+                        padding: 15px 24px
+                    .footer
+                        .email
+                            font-size: 19px
+                        .btnCopy
+                            font-size: 14px
+                            padding: 8px 10px 8px 10px
+
+@media (max-width: 1050px)
+    .contact
+        .container
+            h1
+                font-size: 60px
+                width: 100%
+            .variants
+                grid-gap: 30px
+                grid-template-columns: 1fr
+                .block
+                    .footer
+                        grid-template-columns: auto auto auto
+                        justify-content: start
+                        grid-gap: 12px
+
+@media (max-width: 540px)
+    .contact
+        .container
+            margin: 4vh 0
+            grid-gap: 40px
+            h1
+                font-size: 36px
+                width: 90%
+            .variants
+                grid-gap: 20px
+                grid-template-columns: 1fr
+                .block
+                    grid-gap: 24px
+                    padding: 36px 30px 32px 30px
+                    border-radius: 20px
+                    .footer
+                        grid-template-columns: auto 1fr auto
+                        justify-content: start
+                        grid-gap: 0
+                        .email
+                            font-size: 22px
+                            line-height: 24px
+                        .btnCopy
+                            padding: 9px 12px 9px 12px
+                            border-radius: 12px
+                            font-size: 16px

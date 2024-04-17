@@ -3,10 +3,42 @@ import Link from 'next/link'
 import style from './header.module.sass'
 import logo from '@/public/logo.svg'
 import Image from 'next/image'
+import { motion, useScroll, useViewportScroll, useTransform } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 const Header = function () {
+
+    const [hidden, setHidden] = useState<boolean>(false);
+    const { scrollY } = useScroll();
+
+    const handleScroll = () => {
+        if (scrollY.get() < scrollY.getPrevious()) setHidden(false);
+        if (scrollY.get() > 300 && scrollY.get() > scrollY.getPrevious()) setHidden(true);
+    }
+
+    useEffect(() => {
+        return scrollY.onChange(() => handleScroll());
+    });
+
+
+    const headerVariants = {
+        hidden: {
+            y: -150,
+            transition: { duration: .35 }
+        },
+        visible: {
+            y: 0,
+            transition: { duration: .8 }
+        }
+    };
+
+
 return (
-    <header className={style.header}>
+    <motion.header 
+        className={style.header}
+        variants={headerVariants}
+        animate={hidden ? 'hidden' : 'visible'}
+    >
             <div className={style.container}>
                 <div className={style.content}>
                     <Link href={'/#first-screen'} className={style.logo}>
@@ -25,7 +57,7 @@ return (
                     </div>
                 </div>
             </div>
-        </header>
+        </motion.header>
 )
 };
 
